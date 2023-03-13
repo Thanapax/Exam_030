@@ -9,12 +9,12 @@
             Console.Write("Pls input Menu : ");
             string menu = Console.ReadLine();
 
-            if (menu != "End") {
+            if (menu == "Breakfast Set" || menu == "Weekend Set" || menu == "Coffee") {
                 switch(menu){
 
                     case "Breakfast Set":
                         if (time <= 11.00){
-                            int a = 0;
+                            int a = 0 ;
                             while (a < 5){
                                 Console.Write("Pls input Menu : ");
                                 string coffee = Console.ReadLine();
@@ -65,6 +65,8 @@
                 }
             } else if (menu == "End"){
                 break;
+            } else {
+                Console.WriteLine("Please enter a valid menu");
             }
         }
     }
